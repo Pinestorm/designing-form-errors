@@ -13,7 +13,7 @@ html {
   border-color: #f33;
 }
 
-error-message {
+.error-message {
   display: none;
   background-color: #fee;
   color: #c33;
@@ -25,9 +25,9 @@ error-message {
 }
 
 .is-validated > .error-message:first-child,
-.is-validated input:invalid + error-message,
+.is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message,
-.is-validated:invalid + error-message,
+.is-validated:invalid + .error-message,
 .is-validated:invalid + label + .error-message {
   display: block;
 }
